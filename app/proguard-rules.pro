@@ -15,3 +15,9 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+# Use that to prevent error
+-keep class com.newrelic.** { *; }
+
+-dontwarn com.newrelic.**
+
+-keepattributes Exceptions, Signature, InnerClasses

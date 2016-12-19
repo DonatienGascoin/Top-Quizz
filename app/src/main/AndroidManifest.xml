@@ -2,23 +2,52 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cpe.top.quizz">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Inscription" />
-        <activity android:name=".InscriptionConfirm" />
-        <activity android:name=".ResetPassword" />
-        <activity android:name=".ResetPasswordConfirm"></activity>
+        <activity
+            android:name=".Inscription"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".InscriptionConfirm"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ResetPassword"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ResetPasswordConfirm"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".ShowQuizz" />
+        <activity
+            android:name=".StartQuizz"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Home"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".EndGame"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 
 </manifest>
