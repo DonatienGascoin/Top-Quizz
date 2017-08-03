@@ -42,7 +42,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/edit_text_design"
             android:layout_weight="1"
-            android:text="dodo" />
+            android:text="" />
 
         <EditText
             android:layout_width="match_parent"

@@ -26,7 +26,7 @@ import java.util.Map;
 public class JsonParser {
 
     //public static final String API_URL = "http://10.0.2.2:8090/";
-    public static final String API_URL = "http://163.172.91.2:8090/";
+    public static final String API_URL = "http://51.15.11.126:8090/";
 
     static InputStream is = null;
     static JSONObject jObj = null;
